@@ -36,7 +36,3 @@ while(1):
 
     if keyboard.is_pressed("f"):
         pm.write_float(local_player + 0x0C, currentHeight + 3.5)
-    elif keyboard.is_pressed("space"):
-        level = pm.read_float(local_player + 0x30)
-        pm.write_float(local_player + 0x30, level + 5.0)
-        time.sleep(1)
